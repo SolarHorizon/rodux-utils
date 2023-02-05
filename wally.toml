@@ -1,0 +1,10 @@
+[package]
+name = "solarhorizon/rodux-utils"
+description = "A collection of utilities for use with Rodux"
+authors = ["SolarHorizon"]
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+license = "MIT"
+
+[dependencies]
