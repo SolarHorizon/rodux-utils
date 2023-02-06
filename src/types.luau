@@ -1,4 +1,9 @@
 --!strict
+export type Action = {
+	type: string,
+	payload: any?,
+}
+
 export type Payload = (...any?) -> any?
 
 export type ActionCreator<Type = string, Callback = Payload> = typeof(setmetatable(

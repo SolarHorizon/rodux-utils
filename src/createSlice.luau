@@ -1,12 +1,12 @@
 --!strict
 local types = require(script.Parent.types)
-local makeActionCreator = require(script.Parent.makeActionCreator)
+local createAction = require(script.Parent.createAction)
 
 local function makeActionCreators(reducers)
 	local actions = {}
 
 	for type in reducers do
-		actions[type] = makeActionCreator(type, function(payload)
+		actions[type] = createAction(type, function(payload)
 			return payload
 		end)
 	end
