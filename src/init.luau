@@ -1,3 +1,5 @@
+local Immut = require(script.Parent.Immut)
+
 local createAction = require(script.createAction)
 local createReducer = require(script.createReducer)
 local createSlice = require(script.createSlice)
@@ -12,4 +14,6 @@ return {
 	createAction = createAction,
 	createReducer = createReducer,
 	createSlice = createSlice,
+	original = Immut.original,
+	current = Immut.current,
 }
