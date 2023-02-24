@@ -1,7 +1,7 @@
 --!strict
 local types = require(script.Parent.types)
 
-type PrepareFn = (...any?) -> { [any]: any }
+export type PrepareFn = (...any?) -> { [any]: any }
 
 local function default(payload: any?)
 	return {
