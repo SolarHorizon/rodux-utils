@@ -33,24 +33,30 @@ return function()
 			local add = false
 			local sub = false
 
-			local reducer = ReducerBuilder.new({ value = 0 })
+			local oldState = { value = 0 }
+
+			local reducer = ReducerBuilder.new(oldState)
 				:addCase("add", function(state: { value: number }, _action)
 					local newState = table.clone(state)
 					newState.value += 1
 					add = true
+					return newState
 				end)
 				:addCase("sub", function(state: { value: number }, _action)
 					local newState = table.clone(state)
 					newState.value -= 1
 					sub = true
+					return newState
 				end)
 				:_finish()
 
 			local addState = reducer(nil, { type = "add" })
+			expect(addState).to.never.equal(oldState)
 			expect(addState.value).to.equal(1)
 			expect(add).to.equal(true)
 
 			local subState = reducer(nil, { type = "sub" })
+			expect(subState).to.never.equal(oldState)
 			expect(subState.value).to.equal(-1)
 			expect(sub).to.equal(true)
 		end)
