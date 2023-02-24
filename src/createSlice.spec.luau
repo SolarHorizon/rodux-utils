@@ -50,12 +50,14 @@ return function()
 		end)
 
 		it("should handle actions", function()
-			local trueState = slice.reducer({ enabled = false }, slice.actions.debugEnabled())
+			local trueState =
+				slice.reducer({ enabled = false }, slice.actions.debugEnabled())
 
 			expect(trueState).to.be.a("table")
 			expect(trueState.enabled).to.equal(true)
 
-			local falseState = slice.reducer(trueState, slice.actions.debugDisabled())
+			local falseState =
+				slice.reducer(trueState, slice.actions.debugDisabled())
 
 			expect(falseState).to.be.a("table")
 			expect(falseState.enabled).to.equal(false)
@@ -94,11 +96,14 @@ return function()
 		end)
 	end)
 
-	it("should return the given state when there are no handlers for an action", function()
-		local state = { foo = true }
+	it(
+		"should return the given state when there are no handlers for an action",
+		function()
+			local state = { foo = true }
 
-		local newState = slice.reducer(state, { type = "bar" })
+			local newState = slice.reducer(state, { type = "bar" })
 
-		expect(state).to.equal(newState)
-	end)
+			expect(state).to.equal(newState)
+		end
+	)
 end
