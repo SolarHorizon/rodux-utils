@@ -1,0 +1,5 @@
+run:
+  default: test
+test:
+  roots:
+    - ReplicatedStorage.Packages.RoduxUtils
