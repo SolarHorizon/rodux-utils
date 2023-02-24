@@ -1,21 +1,18 @@
 --!strict
-export type Action = {
-	type: string,
-	payload: any?,
+export type Action<T = any> = {
+	type: T,
+	[string]: any,
 }
 
-export type Payload = (...any?) -> any?
-
-export type ActionCreator<Type = string, Callback = Payload> = typeof(setmetatable(
-	{} :: { name: Type },
+export type ActionCreator<T = string> = typeof(setmetatable(
+	{} :: { name: T },
 	{} :: {
-		__call: (any, ...any?) -> {
-			type: string,
-			payload: any?,
-		},
+		__call: (any, ...any?) -> Action<T>,
 	}
 ))
 
-export type Reducer = (state: any?, action: any) -> any
+export type Reducer<T = any> =
+	((state: T, action: Action) -> T?)
+	& ((state: T, action: Action) -> ())
 
 return nil
