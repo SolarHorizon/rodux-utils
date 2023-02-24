@@ -3,8 +3,11 @@
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
-      "RoduxUtils": {
-        "$path": "default.project.json"
+      "Packages": {
+        "$path": "Packages/",
+        "RoduxUtils": {
+          "$path": "default.project.json"
+        }
       }
     }
   }
