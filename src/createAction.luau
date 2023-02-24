@@ -1,21 +1,28 @@
 --!strict
 local types = require(script.Parent.types)
 
-type PrepareFn = (...any?) -> any?
+type PrepareFn = (...any?) -> { [any]: any }
 
-local function default(payload: any?): any?
-	return payload
+local function default(payload: any?)
+	return {
+		payload = payload,
+	}
 end
 
-local function createAction(name: string, prepareFn: PrepareFn?): types.ActionCreator
+local function createAction<T>(
+	name: T,
+	prepareFn: PrepareFn?
+): types.ActionCreator<T>
 	return setmetatable({
 		name = name,
 	}, {
 		__call = function(_self: any, ...)
-			return {
-				type = name,
-				payload = (prepareFn or default :: PrepareFn)(...),
-			}
+			local body = (prepareFn or default :: PrepareFn)(...)
+			assert(typeof(body) == "table", "prepareFn should return a table")
+
+			body.type = name
+
+			return body
 		end,
 	})
 end
