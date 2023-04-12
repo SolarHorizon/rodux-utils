@@ -28,7 +28,7 @@ local state = {
 }
 ```
 
-And here's how we'll filter it, using a selector:
+And here's how we'll filter it with a selector:
 
 ```lua
 local function selectBlueTeam(state)
@@ -73,7 +73,7 @@ selector when we needed to.
 Memoization is a technique that prevents calling a pure function when the
 result would be the same as the last time it was called. It does this by
 caching the result of the function and the arguments passed to it. Since a
-selector is a pure function, we can use it here! RoduxUtils includes a helper
+selector is a pure function, we can memoize it! RoduxUtils includes a helper
 for creating memoized selectors named `createSelector`.
 
 Let's rewrite our `selectBlueTeam` selector using `createSelector`.
@@ -175,8 +175,8 @@ memoization function uses an LRU cache when the size is greater than 1.
 
 You can change the function used to check for equality between old and new
 arguments that are passed to your selector. This might be useful when the
-result one of your input selectors has some nested values that you want to pay
-extra attention to.
+result of one of your input selectors has some nested values that you want
+to pay extra attention to.
 
 For our example, let's take our selectors for the red and blue team and use
 them as our inputs. With them, we'll create a new purple team. Since our
