@@ -20,7 +20,7 @@ data library.
 
 In this example, we're using Rodux on the server to keep track of multiple
 players' inventories. We're going to write a handler for an `itemAdded` action.
-It'll add the item, stored in `action.payload`, to the player's inventory. We'll
+It'll add the item stored in `action.payload`, to the player's inventory. We'll
 get the UserId of the player from `action.meta.userId`.
 
 Using an Immut "producer":
