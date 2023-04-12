@@ -1,4 +1,3 @@
---!strict
 return function()
 	local createReducer = require(script.Parent.createReducer)
 
@@ -11,13 +10,13 @@ return function()
 
 	local initialState = { debug = false }
 
-	local reducers: { any } = {
+	local reducers = {
 		Builder = createReducer(initialState, function(builder)
 			builder
-				:addCase("enabled", function(state: any, _action)
+				:addCase("enabled", function(state, _action)
 					state.debug = true
 				end)
-				:addCase("disabled", function(state: any, _action)
+				:addCase("disabled", function(state, _action)
 					state.debug = false
 				end)
 				:addMatcher(function(action)
@@ -25,7 +24,7 @@ return function()
 				end, function(state, _action)
 					state.matched = true
 				end)
-				:addDefaultCase(function(state: any, _action)
+				:addDefaultCase(function(state, _action)
 					state.default = true
 				end)
 		end),
@@ -50,7 +49,7 @@ return function()
 		end),
 	}
 
-	for name, reducer in reducers do
+	for name, reducer in reducers :: any do
 		describe(`{name} reducer`, function()
 			it("should be a function", function()
 				expect(reducer).to.be.a("function")

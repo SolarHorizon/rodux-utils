@@ -1,4 +1,3 @@
---!strict
 export type Action<T = any> = {
 	type: T,
 	[string]: any,

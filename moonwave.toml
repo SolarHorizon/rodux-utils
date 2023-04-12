@@ -1,0 +1,6 @@
+title = "Rodux Utils"
+classOrder = ["RoduxUtils"]
+
+[home]
+enabled = true
+includeReadme = false

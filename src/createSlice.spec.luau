@@ -3,16 +3,20 @@ return function()
 
 	local initialState = table.freeze({ enabled = false })
 
-	local slice = createSlice("debug", initialState, {
-		debugStateSet = function(_state, action)
-			return { enabled = action.payload }
-		end,
-		debugDisabled = function(_state, _action)
-			return { enabled = false }
-		end,
-		debugEnabled = function(_state, _action)
-			return { enabled = true }
-		end,
+	local slice = createSlice({
+		name = "debug",
+		initialState = initialState,
+		reducers = {
+			debugStateSet = function(_state: any, action: any)
+				return { enabled = action.payload }
+			end,
+			debugDisabled = function(_state: any, _action: any)
+				return { enabled = false }
+			end,
+			debugEnabled = function(_state: any, _actio: any)
+				return { enabled = true }
+			end,
+		},
 	})
 
 	it("should return a table", function()
@@ -71,11 +75,15 @@ return function()
 		it("should still run handlers when state is nil", function()
 			local count = 0
 
-			local counter = createSlice("counter", { counted = false }, {
-				increment = function()
-					count += 1
-					return { counted = true }
-				end,
+			local counter = createSlice({
+				name = "counter",
+				initialState = { counted = false },
+				reducers = {
+					increment = function()
+						count += 1
+						return { counted = true }
+					end,
+				},
 			})
 
 			expect(count).to.equal(0)

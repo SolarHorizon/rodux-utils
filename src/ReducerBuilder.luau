@@ -5,10 +5,18 @@ type Action = types.Action
 type ActionCreator = types.ActionCreator
 type Reducer = types.Reducer
 
+--[=[
+	@within ReducerBuilder
+	@type Cases { [string]: Reducer }
+]=]
 export type Cases = {
 	[string]: Reducer,
 }
 
+--[=[
+	@within ReducerBuilder
+	@type Matchers { { matcher: (Action) -> boolean, reducer: Reducer } }
+]=]
 export type Matchers = {
 	{
 		matcher: (Action) -> boolean,
@@ -53,6 +61,9 @@ export type ReducerBuilder = typeof(setmetatable(
 	{} :: ReducerBuilderImpl
 ))
 
+--[=[
+	@class ReducerBuilder
+]=]
 local ReducerBuilder = {} :: ReducerBuilderImpl
 ReducerBuilder.__index = ReducerBuilder
 
@@ -115,17 +126,36 @@ function ReducerBuilder:_finish()
 	end
 end
 
-function ReducerBuilder:addCase(action, handler)
+--[=[
+	@param action ActionCreator | string -- The action creator or type name
+	@param reducer Reducer
+
+	Adds a case reducer. Can only be called before `addMatcher` and
+	`addDefaultCase`.
+
+	Case reducers are reducers that handle one type of action. They are the
+	standard way of writing reducers in Rodux.
+]=]
+function ReducerBuilder:addCase(action, reducer)
 	assert(
 		table.isfrozen(self._cases) == false,
 		"addCase cannot be called after addMatcher or addDefaultCase"
 	)
 
 	local type = if typeof(action) == "table" then action.name else action
-	self._cases[type] = handler
+	self._cases[type] = reducer
 	return self
 end
 
+--[=[
+	@param matcher (action: Action) -> boolean
+	@param reducer Reducer
+
+	Adds a matcher. Cannot be called after `addDefaultCase`.
+
+	Matchers can be used to handle actions based on your own custom logic
+	rather than only matching the type.
+]=]
 function ReducerBuilder:addMatcher(matcher, reducer)
 	assert(
 		table.isfrozen(self._matchers) == false,
@@ -142,13 +172,22 @@ function ReducerBuilder:addMatcher(matcher, reducer)
 	return self
 end
 
-function ReducerBuilder:addDefaultCase(handler)
+--[=[
+	@param reducer Reducer
+
+	Adds a fallback reducer. This will be invoked if no case reducers or
+	matchers were executed for an action.
+
+	After adding a default case you cannot modify the reducer anymore, so this
+	should be reserved for the very last part of the chain.
+]=]
+function ReducerBuilder:addDefaultCase(reducer)
 	assert(
 		self._defaultCase == defaultReducer,
 		"addDefaultCase cannot be called more than once"
 	)
 
-	self._defaultCase = handler
+	self._defaultCase = reducer
 
 	freeze(self._cases)
 	freeze(self._matchers)
