@@ -1,3 +1,27 @@
+## 0.3.0
+
+- Documentation created
+- `createSlice` now takes a single dictionary argument
+- Added new Selector utilities:
+  - `createSelector`
+  - `createSelectorCreator`
+  - `defaultMemoize`
+- Reexported `Immut.remove` and `Immut.insert`
+- Moved all Immut exports into `Draft`
+  - `Draft.original`
+  - `Draft.current`
+  - `Draft.remove`
+  - `Draft.insert`
+
+## 0.2.1
+
+- Reexported `Immut.original` and `Immut.current`
+
+## 0.2.0
+
+- Introduced Immut to RoduxUtils
+- `createReducer` and `createSlice` now pass a draft to reducers
+
 ## 0.1.0
 
 - Initial release
