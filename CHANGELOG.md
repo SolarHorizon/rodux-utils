@@ -1,3 +1,8 @@
+## Unreleased
+
+- Added `Draft.None`
+- Added `Draft.nothing`
+
 ## 0.3.1
 
 - Updated Immut to v0.4.0

@@ -71,9 +71,34 @@ local Immut = require(script.Parent.Parent.Immut)
 	https://create.roblox.com/docs/reference/engine/libraries/table#clear
 ]=]
 
+--[=[
+	@within Draft
+	@prop None None
+
+	When returned from a recipe, the next value will be nil.
+
+	```lua
+	local new = produce(state, function(draft)
+		return None
+	end)
+
+	print(new) -- nil
+	```
+]=]
+
+--[=[
+	@within Draft
+	@prop nothing None
+
+	Alias for [`None`](/api/Draft#None)
+]=]
+
 return {
 	current = Immut.current,
 	original = Immut.original,
+	nothing = Immut.nothing,
+	None = Immut.None,
+
 	clear = Immut.table.clear,
 	insert = Immut.table.insert,
 	remove = Immut.table.remove,
