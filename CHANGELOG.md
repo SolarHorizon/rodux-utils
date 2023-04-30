@@ -1,3 +1,9 @@
+## 0.3.1
+
+- Updated Immut to v0.4.0
+- Added `Draft.sort`
+- Added `Draft.clear`
+
 ## 0.3.0
 
 - Documentation created
