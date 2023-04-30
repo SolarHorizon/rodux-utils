@@ -10,4 +10,4 @@ exclude = ["**"]
 include = ["src", "src/**", "wally.toml", "wally.lock", "default.project.json"]
 
 [dependencies]
-Immut = "solarhorizon/immut@0.3.0"
+Immut = "solarhorizon/immut@0.4.0"

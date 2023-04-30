@@ -29,27 +29,53 @@ local Immut = require(script.Parent.Parent.Immut)
 --[=[
 	@within Draft
 	@function insert
-	@param draft Draft<State>
-	@param pos number | V,
-	@param value V?
-	@return V?
+	@param t { V }
+	@param pos number
+	@param value V
 
-	Draft-safe replacement for `table.insert`
+	Draft-safe replacement for `table.insert`.
+
+	https://create.roblox.com/docs/reference/engine/libraries/table#insert
 ]=]
 
 --[=[
 	@within Draft
 	@function remove
-	@param draft Draft<{V}>
+	@param t { V }
 	@param pos number?
 	@return V?
 
-	Draft-safe replacement for `table.remove`
+	Draft-safe replacement for `table.remove`.
+
+	https://create.roblox.com/docs/reference/engine/libraries/table#remove
+]=]
+
+--[=[
+	@within Draft
+	@function sort
+	@param t { V }
+	@param comp function
+
+	Draft-safe replacement for `table.sort`.
+
+	https://create.roblox.com/docs/reference/engine/libraries/table#sort
+]=]
+
+--[=[
+	@within Draft
+	@function clear
+	@param t { [K]: V }
+
+	Draft-safe replacement for `table.clear`.
+
+	https://create.roblox.com/docs/reference/engine/libraries/table#clear
 ]=]
 
 return {
 	current = Immut.current,
 	original = Immut.original,
-	insert = Immut.insert,
-	remove = Immut.remove,
+	clear = Immut.table.clear,
+	insert = Immut.table.insert,
+	remove = Immut.table.remove,
+	sort = Immut.table.sort,
 }
