@@ -6,8 +6,8 @@
 <title data-rh="true">Draft | Rodux Utils</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://SolarHorizon.github.io/rodux-utils/api/Draft"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Draft | Rodux Utils"><meta data-rh="true" name="description" content="Helper functions for use with Drafts. These are reexported from
 [Immut](https://github.com/solarhorizon/immut)."><meta data-rh="true" property="og:description" content="Helper functions for use with Drafts. These are reexported from
 [Immut](https://github.com/solarhorizon/immut)."><link data-rh="true" rel="canonical" href="https://SolarHorizon.github.io/rodux-utils/api/Draft"><link data-rh="true" rel="alternate" href="https://SolarHorizon.github.io/rodux-utils/api/Draft" hreflang="en"><link data-rh="true" rel="alternate" href="https://SolarHorizon.github.io/rodux-utils/api/Draft" hreflang="x-default"><link rel="stylesheet" href="/rodux-utils/assets/css/styles.9b3dbd17.css">
-<link rel="preload" href="/rodux-utils/assets/js/runtime~main.78816457.js" as="script">
-<link rel="preload" href="/rodux-utils/assets/js/main.559b9629.js" as="script">
+<link rel="preload" href="/rodux-utils/assets/js/runtime~main.bcf0bf9f.js" as="script">
+<link rel="preload" href="/rodux-utils/assets/js/main.c9e5086a.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -23,10 +23,18 @@
 </p>
 </div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="original"><code style="text-decoration:none">original</code><a href="#original" class="hash-link" aria-label="Direct link to original" title="Direct link to original">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/Draft.luau#L28"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Draft<!-- -->.</code><code class="green_DgR4">original</code><code>(</code><code>draft<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/Draft">Draft</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">State</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS">State</code></div><div>
 <p>Get the original table from a draft.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="insert"><code style="text-decoration:none">insert</code><a href="#insert" class="hash-link" aria-label="Direct link to insert" title="Direct link to insert">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/Draft.luau#L39"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Draft<!-- -->.</code><code class="green_DgR4">insert</code><code>(</code><div class="inset_uKQm"><div><code>draft<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/Draft">Draft</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">State</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>pos<!-- -->: </code><code class="blue_P4bS">number</code><code class="op_lSLc"> | </code><code class="blue_P4bS">V,</code><code>,</code></div><div><code>value<!-- -->: </code><code class="blue_P4bS">V?</code></div></div><code>) → </code><code class="blue_P4bS">V?</code></div><div>
-<p>Draft-safe replacement for <code>table.insert</code></p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="remove"><code style="text-decoration:none">remove</code><a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/Draft.luau#L49"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Draft<!-- -->.</code><code class="green_DgR4">remove</code><code>(</code><div class="inset_uKQm"><div><code>draft<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/Draft">Draft</a></code><code class="op_lSLc">&lt;</code><code class="purple_ieR2">{</code><code class="blue_P4bS">V</code><code class="purple_ieR2">}</code><code class="op_lSLc">&gt;</code><code>,</code></div><div><code>pos<!-- -->: </code><code class="blue_P4bS">number?</code></div></div><code>) → </code><code class="blue_P4bS">V?</code></div><div>
-<p>Draft-safe replacement for <code>table.remove</code></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="insert"><code style="text-decoration:none">insert</code><a href="#insert" class="hash-link" aria-label="Direct link to insert" title="Direct link to insert">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/Draft.luau#L40"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Draft<!-- -->.</code><code class="green_DgR4">insert</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="purple_ieR2">{</code><code class="blue_P4bS">V</code><code class="purple_ieR2">}</code><code>,</code></div><div><code>pos<!-- -->: </code><code class="blue_P4bS">number</code><code>,</code></div><div><code>value<!-- -->: </code><code class="blue_P4bS">V</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Draft-safe replacement for <code>table.insert</code>.</p>
+<p><a href="https://create.roblox.com/docs/reference/engine/libraries/table#insert" target="_blank">https://create.roblox.com/docs/reference/engine/libraries/table#insert</a></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="remove"><code style="text-decoration:none">remove</code><a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/Draft.luau#L52"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Draft<!-- -->.</code><code class="green_DgR4">remove</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="purple_ieR2">{</code><code class="blue_P4bS">V</code><code class="purple_ieR2">}</code><code>,</code></div><div><code>pos<!-- -->: </code><code class="blue_P4bS">number?</code></div></div><code>) → </code><code class="blue_P4bS">V?</code></div><div>
+<p>Draft-safe replacement for <code>table.remove</code>.</p>
+<p><a href="https://create.roblox.com/docs/reference/engine/libraries/table#remove" target="_blank">https://create.roblox.com/docs/reference/engine/libraries/table#remove</a></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sort"><code style="text-decoration:none">sort</code><a href="#sort" class="hash-link" aria-label="Direct link to sort" title="Direct link to sort">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/Draft.luau#L63"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Draft<!-- -->.</code><code class="green_DgR4">sort</code><code>(</code><div class="inset_uKQm"><div><code>t<!-- -->: </code><code class="purple_ieR2">{</code><code class="blue_P4bS">V</code><code class="purple_ieR2">}</code><code>,</code></div><div><code>comp<!-- -->: </code><code class="blue_P4bS">function</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Draft-safe replacement for <code>table.sort</code>.</p>
+<p><a href="https://create.roblox.com/docs/reference/engine/libraries/table#sort" target="_blank">https://create.roblox.com/docs/reference/engine/libraries/table#sort</a></p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="clear"><code style="text-decoration:none">clear</code><a href="#clear" class="hash-link" aria-label="Direct link to clear" title="Direct link to clear">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/Draft.luau#L73"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>Draft<!-- -->.</code><code class="green_DgR4">clear</code><code>(</code><code>t<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">K</code><code>]</code></span><code>: </code><code class="blue_P4bS">V</code><code class="purple_ieR2">}</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Draft-safe replacement for <code>table.clear</code>.</p>
+<p><a href="https://create.roblox.com/docs/reference/engine/libraries/table#clear" target="_blank">https://create.roblox.com/docs/reference/engine/libraries/table#clear</a></p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
@@ -75,44 +83,39 @@
         },
         {
             &quot;name&quot;: &quot;insert&quot;,
-            &quot;desc&quot;: &quot;Draft-safe replacement for `table.insert`&quot;,
+            &quot;desc&quot;: &quot;Draft-safe replacement for `table.insert`.\n\nhttps://create.roblox.com/docs/reference/engine/libraries/table#insert&quot;,
             &quot;params&quot;: [
                 {
-                    &quot;name&quot;: &quot;draft&quot;,
+                    &quot;name&quot;: &quot;t&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Draft&lt;State&gt;&quot;
+                    &quot;lua_type&quot;: &quot;{ V }&quot;
                 },
                 {
                     &quot;name&quot;: &quot;pos&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;number | V,&quot;
+                    &quot;lua_type&quot;: &quot;number&quot;
                 },
                 {
                     &quot;name&quot;: &quot;value&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;V?&quot;
+                    &quot;lua_type&quot;: &quot;V&quot;
                 }
             ],
-            &quot;returns&quot;: [
-                {
-                    &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;V?&quot;
-                }
-            ],
+            &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 39,
+                &quot;line&quot;: 40,
                 &quot;path&quot;: &quot;src/Draft.luau&quot;
             }
         },
         {
             &quot;name&quot;: &quot;remove&quot;,
-            &quot;desc&quot;: &quot;Draft-safe replacement for `table.remove`&quot;,
+            &quot;desc&quot;: &quot;Draft-safe replacement for `table.remove`.\n\nhttps://create.roblox.com/docs/reference/engine/libraries/table#remove&quot;,
             &quot;params&quot;: [
                 {
-                    &quot;name&quot;: &quot;draft&quot;,
+                    &quot;name&quot;: &quot;t&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Draft&lt;{V}&gt;&quot;
+                    &quot;lua_type&quot;: &quot;{ V }&quot;
                 },
                 {
                     &quot;name&quot;: &quot;pos&quot;,
@@ -128,7 +131,46 @@
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 49,
+                &quot;line&quot;: 52,
+                &quot;path&quot;: &quot;src/Draft.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;sort&quot;,
+            &quot;desc&quot;: &quot;Draft-safe replacement for `table.sort`.\n\nhttps://create.roblox.com/docs/reference/engine/libraries/table#sort&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;t&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;{ V }&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;comp&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;function&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 63,
+                &quot;path&quot;: &quot;src/Draft.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;clear&quot;,
+            &quot;desc&quot;: &quot;Draft-safe replacement for `table.clear`.\n\nhttps://create.roblox.com/docs/reference/engine/libraries/table#clear&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;t&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;{ [K]: V }&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 73,
                 &quot;path&quot;: &quot;src/Draft.luau&quot;
             }
         }
@@ -141,8 +183,8 @@
         &quot;line&quot;: 9,
         &quot;path&quot;: &quot;src/Draft.luau&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#current" class="table-of-contents__link toc-highlight">.current</a></li><li><a href="#insert" class="table-of-contents__link toc-highlight">.insert</a></li><li><a href="#original" class="table-of-contents__link toc-highlight">.original</a></li><li><a href="#remove" class="table-of-contents__link toc-highlight">.remove</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 SolarHorizon. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/rodux-utils/assets/js/runtime~main.78816457.js"></script>
-<script src="/rodux-utils/assets/js/main.559b9629.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#clear" class="table-of-contents__link toc-highlight">.clear</a></li><li><a href="#current" class="table-of-contents__link toc-highlight">.current</a></li><li><a href="#insert" class="table-of-contents__link toc-highlight">.insert</a></li><li><a href="#original" class="table-of-contents__link toc-highlight">.original</a></li><li><a href="#remove" class="table-of-contents__link toc-highlight">.remove</a></li><li><a href="#sort" class="table-of-contents__link toc-highlight">.sort</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 SolarHorizon. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/rodux-utils/assets/js/runtime~main.bcf0bf9f.js"></script>
+<script src="/rodux-utils/assets/js/main.c9e5086a.js"></script>
 </body>
 </html>
