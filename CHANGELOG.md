@@ -2,6 +2,7 @@
 
 - Added `Draft.None`
 - Added `Draft.nothing`
+- Export type `Slice`
 
 ## 0.3.1
 

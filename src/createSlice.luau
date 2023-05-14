@@ -47,7 +47,7 @@ type SliceOptions<State> = {
 	.actions { [string]: ActionCreator },
 	.initialState State?
 ]=]
-type Slice<State> = {
+export type Slice<State> = {
 	name: string,
 	reducer: Reducer,
 	actions: { [string]: ActionCreator },

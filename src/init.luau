@@ -15,6 +15,7 @@ local types = require(script.types)
 export type Action = types.Action
 export type ActionCreator = types.ActionCreator
 export type Reducer = types.Reducer
+export type Slice<State> = createSlice.Slice<State>
 
 return {
 	createAction = createAction,
