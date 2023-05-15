@@ -1,4 +1,4 @@
-## Unreleased
+## 0.3.2
 
 - Added `Draft.None`
 - Added `Draft.nothing`
