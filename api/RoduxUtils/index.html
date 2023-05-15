@@ -4,21 +4,66 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.3.1">
 <title data-rh="true">RoduxUtils | Rodux Utils</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="RoduxUtils | Rodux Utils"><meta data-rh="true" name="description" content="A collection of useful functions for projects that use Rodux."><meta data-rh="true" property="og:description" content="A collection of useful functions for projects that use Rodux."><link data-rh="true" rel="canonical" href="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils"><link data-rh="true" rel="alternate" href="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils" hreflang="en"><link data-rh="true" rel="alternate" href="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils" hreflang="x-default"><link rel="stylesheet" href="/rodux-utils/assets/css/styles.9b3dbd17.css">
-<link rel="preload" href="/rodux-utils/assets/js/runtime~main.03b4a185.js" as="script">
-<link rel="preload" href="/rodux-utils/assets/js/main.1fb2b8a0.js" as="script">
+<link rel="preload" href="/rodux-utils/assets/js/runtime~main.c80db7c6.js" as="script">
+<link rel="preload" href="/rodux-utils/assets/js/main.5076aea6.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
 <div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/rodux-utils/"><b class="navbar__title text--truncate">Rodux Utils</b></a><a class="navbar__item navbar__link" href="/rodux-utils/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/rodux-utils/api/">API</a><a class="navbar__item navbar__link" href="/rodux-utils/changelog">Changelog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/SolarHorizon/rodux-utils" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="searchBox_ZlJk"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0 docPageContainer_wNNk"><div class="docPage_Dpn1"><div class="docSidebarContainer_o_re"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/rodux-utils/api/RoduxUtils">​Rodux​Utils</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/rodux-utils/api/Draft">​Draft</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/rodux-utils/api/ReducerBuilder">​Reducer​Builder</a></li></ul></nav></div></div><main class="docMainContainer_HJE1"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_MU3C"><div class="docItemContainer_Wv98"><article><div class="member_J0w1 markdown"><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_oUs_"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><header><h1 class="docTitle_mZRt" style="text-decoration:none"><span style="display:inline-block">Rodux</span><span style="display:inline-block">Utils</span></h1><div class="luaClassTags_EipM"></div><div>
 <p>A collection of useful functions for projects that use Rodux.</p>
-</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="types">Types<a href="#types" class="hash-link" aria-label="Direct link to Types" title="Direct link to Types">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="EqualityFn"><code style="text-decoration:none">EqualityFn</code><a href="#EqualityFn" class="hash-link" aria-label="Direct link to EqualityFn" title="Direct link to EqualityFn">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/defaultMemoize/types.luau#L7"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>EqualityFn<!-- --> = </code> <code class="purple_ieR2">(</code><div class="inset_uKQm"><code>a<!-- -->: </code><code class="blue_P4bS">any?</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>b<!-- -->: </code><code class="blue_P4bS">any?</code></div><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">boolean</code></div><div>
-<p>Any type of function that compares two values and returns a boolean.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="MemoizeOptions"><code style="text-decoration:none">MemoizeOptions</code><a href="#MemoizeOptions" class="hash-link" aria-label="Direct link to MemoizeOptions" title="Direct link to MemoizeOptions">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/defaultMemoize/getOptions.luau#L11"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>MemoizeOptions<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>equalityCheck<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#EqualityFn">EqualityFn?</a></code></div><div><code>resultEqualityCheck<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#EqualityFn">EqualityFn?</a></code></div><div><code>maxSize<!-- -->: </code><code class="blue_P4bS">number?</code></div></div><code>}</code></div><div>
+</div></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="types">Types<a href="#types" class="hash-link" aria-label="Direct link to Types" title="Direct link to Types">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="MemoizeOptions"><code style="text-decoration:none">MemoizeOptions</code><a href="#MemoizeOptions" class="hash-link" aria-label="Direct link to MemoizeOptions" title="Direct link to MemoizeOptions">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/defaultMemoize/getOptions.luau#L11"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>MemoizeOptions<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>equalityCheck<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#EqualityFn">EqualityFn?</a></code></div><div><code>resultEqualityCheck<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#EqualityFn">EqualityFn?</a></code></div><div><code>maxSize<!-- -->: </code><code class="blue_P4bS">number?</code></div></div><code>}</code></div><div>
 <p>
   MemoizeOptions can be used to customize the Memoize instance
   returned from <code>defaultMemoize</code>.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ReducerMap"><code style="text-decoration:none">ReducerMap</code><a href="#ReducerMap" class="hash-link" aria-label="Direct link to ReducerMap" title="Direct link to ReducerMap">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSlice.luau#L17"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>ReducerMap<!-- --> = </code> <code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">Reducer</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#ReducerAndPrepareFn">ReducerAndPrepareFn</a></code><code class="purple_ieR2">}</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ReducerAndPrepareFn"><code style="text-decoration:none">ReducerAndPrepareFn</code><a href="#ReducerAndPrepareFn" class="hash-link" aria-label="Direct link to ReducerAndPrepareFn" title="Direct link to ReducerAndPrepareFn">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSlice.luau#L25"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>ReducerAndPrepareFn<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>reducer<!-- -->: </code><code class="blue_P4bS">Reducer</code></div><div><code>prepare<!-- -->: </code><code class="blue_P4bS">PrepareFn</code></div></div><code>}</code></div><div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createReducer"><code style="text-decoration:none">createReducer</code><a href="#createReducer" class="hash-link" aria-label="Direct link to createReducer" title="Direct link to createReducer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createReducer.luau#L93"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createReducer</code><code>(</code><div class="inset_uKQm"><div><code>initialState<!-- -->: </code><code class="blue_P4bS">any?</code><code>,</code></div><div><code>callbackOrHandlers<!-- -->: </code><code class="blue_P4bS">BuilderCallback</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Cases">Cases?</a></code><code>,</code></div><div><code>matchers<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Matchers">Matchers?</a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="EqualityFn"><code style="text-decoration:none">EqualityFn</code><a href="#EqualityFn" class="hash-link" aria-label="Direct link to EqualityFn" title="Direct link to EqualityFn">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/defaultMemoize/types.luau#L7"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>EqualityFn<!-- --> = </code> <code class="purple_ieR2">(</code><div class="inset_uKQm"><code>a<!-- -->: </code><code class="blue_P4bS">any?</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code>b<!-- -->: </code><code class="blue_P4bS">any?</code></div><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">boolean</code></div><div>
+<p>Any type of function that compares two values and returns a boolean.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ReducerMap"><code style="text-decoration:none">ReducerMap</code><a href="#ReducerMap" class="hash-link" aria-label="Direct link to ReducerMap" title="Direct link to ReducerMap">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSlice.luau#L17"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>ReducerMap<!-- --> = </code> <code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">Reducer</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#ReducerAndPrepareFn">ReducerAndPrepareFn</a></code><code class="purple_ieR2">}</code></div><div></div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="ReducerAndPrepareFn"><code style="text-decoration:none">ReducerAndPrepareFn</code><a href="#ReducerAndPrepareFn" class="hash-link" aria-label="Direct link to ReducerAndPrepareFn" title="Direct link to ReducerAndPrepareFn">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSlice.luau#L25"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>ReducerAndPrepareFn<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>reducer<!-- -->: </code><code class="blue_P4bS">Reducer</code></div><div><code>prepare<!-- -->: </code><code class="blue_P4bS">PrepareFn</code></div></div><code>}</code></div><div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="functions">Functions<a href="#functions" class="hash-link" aria-label="Direct link to Functions" title="Direct link to Functions">​</a></h2><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createSelectorCreator"><code style="text-decoration:none">createSelectorCreator</code><a href="#createSelectorCreator" class="hash-link" aria-label="Direct link to createSelectorCreator" title="Direct link to createSelectorCreator">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSelectorCreator.luau#L39"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createSelectorCreator</code><code>(</code><div class="inset_uKQm"><div><code>memoizeFn<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#MemoizeFn">MemoizeFn</a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>your custom memoization function</p>
+</span></span></div><div><code>...<!-- -->: </code><code class="blue_P4bS">any?</code><span class="inlineDescription_G7Er">-- <span>
+<p>any additional arguments to pass to <code>memoizeFn</code></p>
+</span></span></div></div><code>) → </code><code class="blue_P4bS">createSelector</code></div><h3>Types</h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id="MemoizeFn"><a href="#MemoizeFn" class="hash-link" aria-label="Direct link to MemoizeFn" title="Direct link to MemoizeFn">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>MemoizeFn<!-- --> = </code> <code class="purple_ieR2">(</code><div class="inset_uKQm"><code>fn<!-- -->: </code><code class="blue_P4bS">function</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">...any?</code></div><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">function</code></div><div></div><div>
+<p>Used to create a custom version of <code>createSelector</code>.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> customSelectorCreator <span class="token operator">=</span> <span class="token function">createSelectorCreator</span><span class="token punctuation">(</span>
+	customMemoize<span class="token punctuation">,</span> <span class="token comment">-- function to be used to memoize `fn`</span>
+	option1<span class="token punctuation">,</span> <span class="token comment">-- option1 will be passed as the second argument to `customMemoize`</span>
+	option2 <span class="token comment">-- option2 will be passed as the third argument to `customMemoize`</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">local</span> customSelector <span class="token operator">=</span> <span class="token function">customSelectorCreator</span><span class="token punctuation">(</span>
+	<span class="token punctuation">{</span>
+		selectFoo<span class="token punctuation">,</span>
+		selectBar<span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	resultFunc <span class="token comment">-- resultFunc will be passed as the first argument to `customMemoize`</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>You can find more examples of this in action <a href="https://github.com/reduxjs/reselect#createselectorcreatormemoize-memoizeoptions" target="_blank">here</a>.</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createSelector"><code style="text-decoration:none">createSelector</code><a href="#createSelector" class="hash-link" aria-label="Direct link to createSelector" title="Direct link to createSelector">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSelectorCreator.luau#L64"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createSelector</code><code>(</code><div class="inset_uKQm"><div><code>inputSelectors<!-- -->: </code><code class="purple_ieR2">{</code><code class="blue_P4bS">Selector</code><code class="purple_ieR2">}</code><code>,</code></div><div><code>resultFn<!-- -->: </code><code class="blue_P4bS">ResultFn</code><code>,</code></div><div><code>memoizeOptions<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#MemoizeOptions">MemoizeOptions?</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS">any?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>options for <code>defaultMemoize</code>, or the first argument to a custom memoization function</p>
+</span></span></div><div><code>...<!-- -->: </code><code class="blue_P4bS">any?</code><span class="inlineDescription_G7Er">-- <span>
+<p>additional arguments for a custom memoize function</p>
+</span></span></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Create a memoized selector.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> selectTotal <span class="token operator">=</span> <span class="token function">createSelector</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span>
+		<span class="token keyword">return</span> state<span class="token punctuation">.</span>values<span class="token punctuation">.</span>value1
+	<span class="token keyword">end</span><span class="token punctuation">,</span>
+	<span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span>
+		<span class="token keyword">return</span> state<span class="token punctuation">.</span>values<span class="token punctuation">.</span>value2
+	<span class="token keyword">end</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>value1<span class="token punctuation">,</span> value2<span class="token punctuation">)</span>
+	<span class="token keyword">return</span> value1 <span class="token operator">+</span> value2
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="defaultMemoize"><code style="text-decoration:none">defaultMemoize</code><a href="#defaultMemoize" class="hash-link" aria-label="Direct link to defaultMemoize" title="Direct link to defaultMemoize">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/defaultMemoize/init.luau#L18"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">defaultMemoize</code><code>(</code><div class="inset_uKQm"><div><code>fn<!-- -->: </code><code class="purple_ieR2">(</code><code class="blue_P4bS">Args...</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">any?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
+<p>The function you want to memoize</p>
+</span></span></div><div><code>equalityFnOrOptions<!-- -->: </code><code class="purple_ieR2">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#EqualityFn">EqualityFn</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#MemoizeOptions">MemoizeOptions</a></code><code class="purple_ieR2">)</code><code class="blue_P4bS">?</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+<p>
+  Memoizes a function. This is the default memoization function for
+  <code>createSelector</code>.
+</p>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createReducer"><code style="text-decoration:none">createReducer</code><a href="#createReducer" class="hash-link" aria-label="Direct link to createReducer" title="Direct link to createReducer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createReducer.luau#L93"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createReducer</code><code>(</code><div class="inset_uKQm"><div><code>initialState<!-- -->: </code><code class="blue_P4bS">any?</code><code>,</code></div><div><code>callbackOrHandlers<!-- -->: </code><code class="blue_P4bS">BuilderCallback</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Cases">Cases?</a></code><code>,</code></div><div><code>matchers<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Matchers">Matchers?</a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>not used with BuilderCallback</p>
 </span></span></div><div><code>defaultHandler<!-- -->: </code><code class="blue_P4bS">Reducer?</code><span class="inlineDescription_G7Er">-- <span>
 <p>not used with BuilderCallback</p>
@@ -92,51 +137,6 @@
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token comment">-- we can't add a default case with the map notation</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createSelectorCreator"><code style="text-decoration:none">createSelectorCreator</code><a href="#createSelectorCreator" class="hash-link" aria-label="Direct link to createSelectorCreator" title="Direct link to createSelectorCreator">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSelectorCreator.luau#L39"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createSelectorCreator</code><code>(</code><div class="inset_uKQm"><div><code>memoizeFn<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#MemoizeFn">MemoizeFn</a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
-<p>your custom memoization function</p>
-</span></span></div><div><code>...<!-- -->: </code><code class="blue_P4bS">any?</code><span class="inlineDescription_G7Er">-- <span>
-<p>any additional arguments to pass to <code>memoizeFn</code></p>
-</span></span></div></div><code>) → </code><code class="blue_P4bS">createSelector</code></div><h3>Types</h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id="MemoizeFn"><a href="#MemoizeFn" class="hash-link" aria-label="Direct link to MemoizeFn" title="Direct link to MemoizeFn">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">type</code> <code>MemoizeFn<!-- --> = </code> <code class="purple_ieR2">(</code><div class="inset_uKQm"><code>fn<!-- -->: </code><code class="blue_P4bS">function</code><code class="purple_ieR2">,</code></div><div class="inset_uKQm"><code class="blue_P4bS">...any?</code></div><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">function</code></div><div></div><div>
-<p>Used to create a custom version of <code>createSelector</code>.</p>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> customSelectorCreator <span class="token operator">=</span> <span class="token function">createSelectorCreator</span><span class="token punctuation">(</span>
-	customMemoize<span class="token punctuation">,</span> <span class="token comment">-- function to be used to memoize `fn`</span>
-	option1<span class="token punctuation">,</span> <span class="token comment">-- option1 will be passed as the second argument to `customMemoize`</span>
-	option2 <span class="token comment">-- option2 will be passed as the third argument to `customMemoize`</span>
-<span class="token punctuation">)</span>
-
-<span class="token keyword">local</span> customSelector <span class="token operator">=</span> <span class="token function">customSelectorCreator</span><span class="token punctuation">(</span>
-	<span class="token punctuation">{</span>
-		selectFoo<span class="token punctuation">,</span>
-		selectBar<span class="token punctuation">,</span>
-	<span class="token punctuation">}</span><span class="token punctuation">,</span>
-	resultFunc <span class="token comment">-- resultFunc will be passed as the first argument to `customMemoize`</span>
-<span class="token punctuation">)</span>
-</code></pre>
-<p>You can find more examples of this in action <a href="https://github.com/reduxjs/reselect#createselectorcreatormemoize-memoizeoptions" target="_blank">here</a>.</p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createSelector"><code style="text-decoration:none">createSelector</code><a href="#createSelector" class="hash-link" aria-label="Direct link to createSelector" title="Direct link to createSelector">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSelectorCreator.luau#L64"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createSelector</code><code>(</code><div class="inset_uKQm"><div><code>inputSelectors<!-- -->: </code><code class="purple_ieR2">{</code><code class="blue_P4bS">Selector</code><code class="purple_ieR2">}</code><code>,</code></div><div><code>resultFn<!-- -->: </code><code class="blue_P4bS">ResultFn</code><code>,</code></div><div><code>memoizeOptions<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#MemoizeOptions">MemoizeOptions?</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS">any?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
-<p>options for <code>defaultMemoize</code>, or the first argument to a custom memoization function</p>
-</span></span></div><div><code>...<!-- -->: </code><code class="blue_P4bS">any?</code><span class="inlineDescription_G7Er">-- <span>
-<p>additional arguments for a custom memoize function</p>
-</span></span></div></div><code>) → </code><code>(</code><code>)</code></div><div>
-<p>Create a memoized selector.</p>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> selectTotal <span class="token operator">=</span> <span class="token function">createSelector</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-	<span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span>
-		<span class="token keyword">return</span> state<span class="token punctuation">.</span>values<span class="token punctuation">.</span>value1
-	<span class="token keyword">end</span><span class="token punctuation">,</span>
-	<span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span>
-		<span class="token keyword">return</span> state<span class="token punctuation">.</span>values<span class="token punctuation">.</span>value2
-	<span class="token keyword">end</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>value1<span class="token punctuation">,</span> value2<span class="token punctuation">)</span>
-	<span class="token keyword">return</span> value1 <span class="token operator">+</span> value2
-<span class="token keyword">end</span><span class="token punctuation">)</span>
-</code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="defaultMemoize"><code style="text-decoration:none">defaultMemoize</code><a href="#defaultMemoize" class="hash-link" aria-label="Direct link to defaultMemoize" title="Direct link to defaultMemoize">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/defaultMemoize/init.luau#L18"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">defaultMemoize</code><code>(</code><div class="inset_uKQm"><div><code>fn<!-- -->: </code><code class="purple_ieR2">(</code><code class="blue_P4bS">Args...</code><code class="purple_ieR2">)</code><code class="purple_ieR2"> → </code><code class="blue_P4bS">any?</code><code>,</code><span class="inlineDescription_G7Er">-- <span>
-<p>The function you want to memoize</p>
-</span></span></div><div><code>equalityFnOrOptions<!-- -->: </code><code class="purple_ieR2">(</code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#EqualityFn">EqualityFn</a></code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#MemoizeOptions">MemoizeOptions</a></code><code class="purple_ieR2">)</code><code class="blue_P4bS">?</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
-<p>
-  Memoizes a function. This is the default memoization function for
-  <code>createSelector</code>.
-</p>
 </div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createAction"><code style="text-decoration:none">createAction</code><a href="#createAction" class="hash-link" aria-label="Direct link to createAction" title="Direct link to createAction">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createAction.luau#L43"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createAction</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Type</code><code>,</code></div><div><code>prepareFn<!-- -->: </code><code class="blue_P4bS">PrepareFn?</code></div></div><code>) → </code><code class="blue_P4bS">ActionCreator</code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">Type</code><code class="op_lSLc">&gt;</code></div><div>
 <p>
   Similar to Rodux's <code>makeActionCreator</code>, except any additional data is put
@@ -235,43 +235,6 @@ store<span class="token punctuation">:</span><span class="token function">dispat
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
-            &quot;name&quot;: &quot;createReducer&quot;,
-            &quot;desc&quot;: &quot;A simpler way to write a reducer function. Each reducer made with\n`createReducer` is wrapped in an Immut producer, meaning that you can mutate\nthe `state` value passed into your handlers. You can add cases for specific\naction types just like you can with Rodux&#x27;s `createReducer`, but you can\nalso add Matcher handlers that will run when a condition that you define is\nmet. \n\nMultiple matchers can run for the same action. They are run sequentially in \nthe order you defined them.\n\n### Examples\n\n#### Callback notation\n\nThe recommended way to use `createReducer` is by using a ReducerBuilder with\nthe callback notation. It is more readable than using the map notation.\n\n```lua\nlocal reducer = createReducer(initialState, function(builder)\n\tbuilder\n\t\t:addCase(\&quot;itemAdded\&quot;, function(state, action)\n\t\t\t-- you can mutate `state` here, it&#x27;s fine!\n\t\t\tstate.items[action.itemId] = action.item\n\t\tend)\n\t\t:addCase(\&quot;itemRemoved\&quot;, function(state, action)\n\t\t\tstate.items[action.itemId] = nil\n\t\tend)\n\t\t-- run this handler if the action contains a `shouldLog` property\n\t\t:addMatcher(function(action)\n\t\t\treturn action.shouldLog == true\n\t\tend, function(state, action)\n\t\t\t-- remember: we can&#x27;t use table.insert on a draft\n\t\t\tDraft.insert(state.loggedActions, action)\n\t\tend)\n\t\t-- set a fallback for any time an action is dispatched that isn&#x27;t\n\t\t-- handled by a matcher or case reducer\n\t\t:addDefaultCase(function(state, action)\n\t\t\tstate.unhandledActions += 1\n\t\tend)\nend)\n```\n\n#### Map notation\n\nYou can also use the map notation if you prefer. It should feel similar to \nthe `createReducer` function that comes with Rodux. You cannot add a default\ncase when using the map notation.\n\nThis is primarily meant for internal use.\n\n```lua\nlocal reducer = createReducer(initialState, {\n\t-- case reducers\n\titemAdded = function(state, action)\n\t\tstate.items[action.itemId] = action.item\n\tend,\n\titemRemoved = function(state, action)\n\t\tstate.items[action.itemId] = nil\n\tend,\n}, {\n\t-- matchers\n\t{\n\t\tmatcher = function(action)\n\t\t\treturn action.shouldLog == true\n\t\tend,\n\t\treducer = function(state, action)\n\t\t\tDraft.insert(state.loggedActions, action)\n\t\tend,\n\t}\n})\n-- we can&#x27;t add a default case with the map notation\n```&quot;,
-            &quot;params&quot;: [
-                {
-                    &quot;name&quot;: &quot;initialState&quot;,
-                    &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;any?&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;callbackOrHandlers&quot;,
-                    &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;BuilderCallback | Cases?&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;matchers&quot;,
-                    &quot;desc&quot;: &quot;not used with BuilderCallback&quot;,
-                    &quot;lua_type&quot;: &quot;Matchers?&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;defaultHandler&quot;,
-                    &quot;desc&quot;: &quot;not used with BuilderCallback&quot;,
-                    &quot;lua_type&quot;: &quot;Reducer?&quot;
-                }
-            ],
-            &quot;returns&quot;: [
-                {
-                    &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Reducer&quot;
-                }
-            ],
-            &quot;function_type&quot;: &quot;static&quot;,
-            &quot;source&quot;: {
-                &quot;line&quot;: 93,
-                &quot;path&quot;: &quot;src/createReducer.luau&quot;
-            }
-        },
-        {
             &quot;name&quot;: &quot;createSelectorCreator&quot;,
             &quot;desc&quot;: &quot;Used to create a custom version of `createSelector`.\n\n```lua\nlocal customSelectorCreator = createSelectorCreator(\n\tcustomMemoize, -- function to be used to memoize `fn`\n\toption1, -- option1 will be passed as the second argument to `customMemoize`\n\toption2 -- option2 will be passed as the third argument to `customMemoize`\n)\n\nlocal customSelector = customSelectorCreator(\n\t{\n\t\tselectFoo,\n\t\tselectBar,\n\t},\n\tresultFunc -- resultFunc will be passed as the first argument to `customMemoize`\n)\n```\n\nYou can find more examples of this in action [here](https://github.com/reduxjs/reselect#createselectorcreatormemoize-memoizeoptions).&quot;,
             &quot;params&quot;: [
@@ -353,6 +316,43 @@ store<span class="token punctuation">:</span><span class="token function">dispat
             }
         },
         {
+            &quot;name&quot;: &quot;createReducer&quot;,
+            &quot;desc&quot;: &quot;A simpler way to write a reducer function. Each reducer made with\n`createReducer` is wrapped in an Immut producer, meaning that you can mutate\nthe `state` value passed into your handlers. You can add cases for specific\naction types just like you can with Rodux&#x27;s `createReducer`, but you can\nalso add Matcher handlers that will run when a condition that you define is\nmet. \n\nMultiple matchers can run for the same action. They are run sequentially in \nthe order you defined them.\n\n### Examples\n\n#### Callback notation\n\nThe recommended way to use `createReducer` is by using a ReducerBuilder with\nthe callback notation. It is more readable than using the map notation.\n\n```lua\nlocal reducer = createReducer(initialState, function(builder)\n\tbuilder\n\t\t:addCase(\&quot;itemAdded\&quot;, function(state, action)\n\t\t\t-- you can mutate `state` here, it&#x27;s fine!\n\t\t\tstate.items[action.itemId] = action.item\n\t\tend)\n\t\t:addCase(\&quot;itemRemoved\&quot;, function(state, action)\n\t\t\tstate.items[action.itemId] = nil\n\t\tend)\n\t\t-- run this handler if the action contains a `shouldLog` property\n\t\t:addMatcher(function(action)\n\t\t\treturn action.shouldLog == true\n\t\tend, function(state, action)\n\t\t\t-- remember: we can&#x27;t use table.insert on a draft\n\t\t\tDraft.insert(state.loggedActions, action)\n\t\tend)\n\t\t-- set a fallback for any time an action is dispatched that isn&#x27;t\n\t\t-- handled by a matcher or case reducer\n\t\t:addDefaultCase(function(state, action)\n\t\t\tstate.unhandledActions += 1\n\t\tend)\nend)\n```\n\n#### Map notation\n\nYou can also use the map notation if you prefer. It should feel similar to \nthe `createReducer` function that comes with Rodux. You cannot add a default\ncase when using the map notation.\n\nThis is primarily meant for internal use.\n\n```lua\nlocal reducer = createReducer(initialState, {\n\t-- case reducers\n\titemAdded = function(state, action)\n\t\tstate.items[action.itemId] = action.item\n\tend,\n\titemRemoved = function(state, action)\n\t\tstate.items[action.itemId] = nil\n\tend,\n}, {\n\t-- matchers\n\t{\n\t\tmatcher = function(action)\n\t\t\treturn action.shouldLog == true\n\t\tend,\n\t\treducer = function(state, action)\n\t\t\tDraft.insert(state.loggedActions, action)\n\t\tend,\n\t}\n})\n-- we can&#x27;t add a default case with the map notation\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;initialState&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;any?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;callbackOrHandlers&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;BuilderCallback | Cases?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;matchers&quot;,
+                    &quot;desc&quot;: &quot;not used with BuilderCallback&quot;,
+                    &quot;lua_type&quot;: &quot;Matchers?&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;defaultHandler&quot;,
+                    &quot;desc&quot;: &quot;not used with BuilderCallback&quot;,
+                    &quot;lua_type&quot;: &quot;Reducer?&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Reducer&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 93,
+                &quot;path&quot;: &quot;src/createReducer.luau&quot;
+            }
+        },
+        {
             &quot;name&quot;: &quot;createAction&quot;,
             &quot;desc&quot;: &quot;Similar to Rodux&#x27;s `makeActionCreator`, except any additional data is put\ninside of a `payload` property by default. This can be overriden with a\ncustom prepareFn.\n\n## Examples\n\n#### Using the default structure\n\n```lua\nlocal todoAdded = createAction(\&quot;todoAdded\&quot;)\n\n\nprint(todoAdded(\&quot;Buy groceries\&quot;)) -- { type = \&quot;todoAdded\&quot;, payload = \&quot;Buy groceries\&quot; }\n```\n\n#### Using a custom structure\n\n```lua\nlocal playerJoined = createAction(\&quot;playerJoined\&quot;, function(userId)\n\treturn {\n\t\tpayload = userId,\n\t\tisRoblox = userId == 1,\n\t}\nend)\n\nprint(playerJoined(1)) -- { type = \&quot;playerJoined\&quot;, payload = 1, isRoblox = true }\n```&quot;,
             &quot;params&quot;: [
@@ -414,15 +414,6 @@ store<span class="token punctuation">:</span><span class="token function">dispat
             }
         },
         {
-            &quot;name&quot;: &quot;EqualityFn&quot;,
-            &quot;desc&quot;: &quot;Any type of function that compares two values and returns a boolean.&quot;,
-            &quot;lua_type&quot;: &quot;(a: any?, b: any?) -&gt; boolean&quot;,
-            &quot;source&quot;: {
-                &quot;line&quot;: 7,
-                &quot;path&quot;: &quot;src/defaultMemoize/types.luau&quot;
-            }
-        },
-        {
             &quot;name&quot;: &quot;MemoizeOptions&quot;,
             &quot;desc&quot;: &quot;MemoizeOptions can be used to customize the Memoize instance\nreturned from `defaultMemoize`.&quot;,
             &quot;fields&quot;: [
@@ -445,6 +436,15 @@ store<span class="token punctuation">:</span><span class="token function">dispat
             &quot;source&quot;: {
                 &quot;line&quot;: 11,
                 &quot;path&quot;: &quot;src/defaultMemoize/getOptions.luau&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;EqualityFn&quot;,
+            &quot;desc&quot;: &quot;Any type of function that compares two values and returns a boolean.&quot;,
+            &quot;lua_type&quot;: &quot;(a: any?, b: any?) -&gt; boolean&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 7,
+                &quot;path&quot;: &quot;src/defaultMemoize/types.luau&quot;
             }
         },
         {
@@ -544,7 +544,7 @@ store<span class="token punctuation">:</span><span class="token function">dispat
         &quot;path&quot;: &quot;src/init.luau&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#EqualityFn" class="table-of-contents__link toc-highlight">EqualityFn</a></li><li><a href="#MemoizeFn" class="table-of-contents__link toc-highlight">MemoizeFn</a></li><li><a href="#MemoizeOptions" class="table-of-contents__link toc-highlight">MemoizeOptions</a></li><li><a href="#ReducerAndPrepareFn" class="table-of-contents__link toc-highlight">ReducerAndPrepareFn</a></li><li><a href="#ReducerMap" class="table-of-contents__link toc-highlight">ReducerMap</a></li><li><a href="#Slice" class="table-of-contents__link toc-highlight">Slice</a></li><li><a href="#SliceOptions" class="table-of-contents__link toc-highlight">SliceOptions</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#createAction" class="table-of-contents__link toc-highlight">.createAction</a></li><li><a href="#createReducer" class="table-of-contents__link toc-highlight">.createReducer</a></li><li><a href="#createSelector" class="table-of-contents__link toc-highlight">.createSelector</a></li><li><a href="#createSelectorCreator" class="table-of-contents__link toc-highlight">.createSelectorCreator</a></li><li><a href="#createSlice" class="table-of-contents__link toc-highlight">.createSlice</a></li><li><a href="#defaultMemoize" class="table-of-contents__link toc-highlight">.defaultMemoize</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 SolarHorizon. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/rodux-utils/assets/js/runtime~main.03b4a185.js"></script>
-<script src="/rodux-utils/assets/js/main.1fb2b8a0.js"></script>
+<script src="/rodux-utils/assets/js/runtime~main.c80db7c6.js"></script>
+<script src="/rodux-utils/assets/js/main.5076aea6.js"></script>
 </body>
 </html>
