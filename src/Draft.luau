@@ -73,6 +73,33 @@ local Immut = require(script.Parent.Parent.Immut)
 
 --[=[
 	@within Draft
+	@function find
+	@param haystack { [K]: V }
+	@param needle V
+	@param init number
+	@return number?
+
+	Draft-safe replacement for `table.find`.
+
+	https://create.roblox.com/docs/reference/engine/libraries/table#find
+]=]
+
+--[=[
+	@within Draft
+	@function concat
+	@param t { V }
+	@param sep string?
+	@param i number?
+	@param j number?
+	@return string
+
+	Draft-safe replacement for `table.find`.
+
+	https://create.roblox.com/docs/reference/engine/libraries/table#concat
+]=]
+
+--[=[
+	@within Draft
 	@prop None None
 
 	When returned from a recipe, the next value will be nil.
@@ -100,6 +127,8 @@ return {
 	None = Immut.None,
 
 	clear = Immut.table.clear,
+	concat = Immut.table.concat,
+	find = Immut.table.find,
 	insert = Immut.table.insert,
 	remove = Immut.table.remove,
 	sort = Immut.table.sort,

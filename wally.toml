@@ -2,7 +2,7 @@
 name = "solarhorizon/rodux-utils"
 description = "A collection of utilities for use with Rodux"
 authors = ["SolarHorizon"]
-version = "0.4.0"
+version = "0.4.1"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 license = "MIT"
@@ -10,4 +10,4 @@ exclude = ["**"]
 include = ["src", "src/**", "wally.toml", "wally.lock", "default.project.json"]
 
 [dependencies]
-Immut = "solarhorizon/immut@0.4.2"
+Immut = "solarhorizon/immut@0.4.3"
