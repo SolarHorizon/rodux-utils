@@ -1,3 +1,7 @@
+## 0.3.3
+
+- Fix payload function type in `createAction`
+
 ## 0.3.2
 
 - Added `Draft.None`

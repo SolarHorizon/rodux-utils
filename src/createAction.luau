@@ -1,9 +1,9 @@
 local types = require(script.Parent.types)
 
 type ActionCreator<T> = types.ActionCreator<T>
-export type PrepareFn = (...any?) -> { [any]: any }
+export type PrepareFn = (...any) -> { [any]: any }
 
-local function default(payload: any?)
+local default: PrepareFn = function(payload: any?)
 	return {
 		payload = payload,
 	}
@@ -48,7 +48,7 @@ local function createAction<Type>(
 		name = name,
 	}, {
 		__call = function(_self: any, ...)
-			local body = (prepareFn or default :: PrepareFn)(...)
+			local body = (prepareFn or default)(...)
 			assert(typeof(body) == "table", "prepareFn should return a table")
 
 			body.type = name
