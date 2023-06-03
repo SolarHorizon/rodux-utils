@@ -26,7 +26,7 @@ jobs:
       - name: Build rbxm
         run: |
           wally install
-          rojo build -o Immut.rbxm
+          rojo build -o RoduxUtils.rbxm
 
       - name: Get version
         id: get_version
@@ -41,4 +41,4 @@ jobs:
           name: ${{ steps.get_version.outputs.VERSION }}
           body_path: latest.md
           fail_on_unmatched_files: true
-          files: Immut.rbxm
+          files: RoduxUtils.rbxm
