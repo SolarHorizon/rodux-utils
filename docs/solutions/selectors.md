@@ -203,7 +203,7 @@ local selectPurpleTeam = createSelector(inputSelectors, function(red, blue)
 end, {
     -- returns true if red & blue team's players are the same as they were
     -- the last time the function was called
-    equalityFn = shallowEquals,
+    equalityCheck = shallowEquals,
 })
 ```
 
@@ -211,8 +211,8 @@ Nice! We've created a new team just by deriving data from what's available in
 our state.
 
 It doesn't end there! There's actually another way to solve this problem. We
-can use `resultEqualityFn` to check the equality of a result. Remember how we
-had to use a custom `equalityFn` because our selectors were returning a new
+can use `resultEqualityCheck` to check the equality of a result. Remember how we
+had to use a custom `equalityCheck` because our selectors were returning a new
 table every time? We can avoid that problem entirely this way.
 
 We'll only refactor `selectBlueTeam` for now.
@@ -233,7 +233,7 @@ local selectBlueTeam = createSelector({ selectPlayers }, function(players)
 
     return blueTeam
 end, {
-    resultEqualityFn = shallowEquals,
+    resultEqualityCheck = shallowEquals,
 })
 ```
 
