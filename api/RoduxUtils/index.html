@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v2.3.1">
 <title data-rh="true">RoduxUtils | Rodux Utils</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="RoduxUtils | Rodux Utils"><meta data-rh="true" name="description" content="A collection of useful functions for projects that use Rodux."><meta data-rh="true" property="og:description" content="A collection of useful functions for projects that use Rodux."><link data-rh="true" rel="canonical" href="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils"><link data-rh="true" rel="alternate" href="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils" hreflang="en"><link data-rh="true" rel="alternate" href="https://SolarHorizon.github.io/rodux-utils/api/RoduxUtils" hreflang="x-default"><link rel="stylesheet" href="/rodux-utils/assets/css/styles.fdfd902f.css">
-<link rel="preload" href="/rodux-utils/assets/js/runtime~main.0b52f5af.js" as="script">
-<link rel="preload" href="/rodux-utils/assets/js/main.87544e8d.js" as="script">
+<link rel="preload" href="/rodux-utils/assets/js/runtime~main.65494711.js" as="script">
+<link rel="preload" href="/rodux-utils/assets/js/main.d8f8cb5d.js" as="script">
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -63,77 +63,28 @@
   Memoizes a function. This is the default memoization function for
   <code>createSelector</code>.
 </p>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createSlice"><code style="text-decoration:none">createSlice</code><a href="#createSlice" class="hash-link" aria-label="Direct link to createSlice" title="Direct link to createSlice">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSlice.luau#L157"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createSlice</code><code>(</code><code>options<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#SliceOptions">SliceOptions</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">State</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#Slice">Slice</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">State</code><code class="op_lSLc">&gt;</code></div><h3>Types</h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id="SliceOptions"><a href="#SliceOptions" class="hash-link" aria-label="Direct link to SliceOptions" title="Direct link to SliceOptions">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>SliceOptions<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">string</code></div><div><code>initialState<!-- -->: </code><code class="blue_P4bS">State?</code></div><div><code>reducers<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#ReducerMap">ReducerMap</a></code></div><div><code>extraReducers<!-- -->: </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code>builder<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder">ReducerBuilder</a></code><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="green_DgR4">)</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Cases">Cases</a></code><code class="purple_ieR2">)</code><code class="blue_P4bS">?</code></div></div><code>}</code></div><div></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Slice"><a href="#Slice" class="hash-link" aria-label="Direct link to Slice" title="Direct link to Slice">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>Slice<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">string</code></div><div><code>reducer<!-- -->: </code><code class="blue_P4bS">Reducer</code></div><div><code>actions<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">ActionCreator</code><code class="purple_ieR2">}</code><code class="blue_P4bS">,</code></div><div><code>initialState<!-- -->: </code><code class="blue_P4bS">State?</code></div></div><code>}</code></div><div></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createAction"><code style="text-decoration:none">createAction</code><a href="#createAction" class="hash-link" aria-label="Direct link to createAction" title="Direct link to createAction">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createAction.luau#L43"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createAction</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Type</code><code>,</code></div><div><code>prepareFn<!-- -->: </code><code class="blue_P4bS">PrepareFn?</code></div></div><code>) → </code><code class="blue_P4bS">ActionCreator</code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">Type</code><code class="op_lSLc">&gt;</code></div><div>
 <p>
-  Automatically generates a reducer and action creators for you. Uses
-  <code>createAction</code> and <code>createReducer</code> internally, so you're able to customize
-  each generated action creator and use drafts in the reducers.
+  Similar to Rodux's <code>makeActionCreator</code>, except any additional data is put
+  inside of a <code>payload</code> property by default. This can be overriden with a
+  custom prepareFn.
 </p>
-<h3>Example</h3>
-<p>
-  Let's create a slice for a todo list. We'll make actions for adding &#x26;
-  removing todos from the list, but not for marking a todo as complete.
-  We'll assume our project already has an action for completing tasks, and
-  reuse it in our todo slice.
-</p>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> todoSlice <span class="token operator">=</span> <span class="token function">createSlice</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-	name <span class="token operator">=</span> <span class="token string">"todo"</span><span class="token punctuation">,</span> 
-	initialState <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-	reducers <span class="token operator">=</span> <span class="token punctuation">{</span>
-		<span class="token comment">-- uses createReducer, so you can mutate state because it's a draft</span>
-		todoRemoved <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span>
-			state<span class="token punctuation">[</span>action<span class="token punctuation">.</span>payload<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">nil</span>
-		<span class="token keyword">end</span><span class="token punctuation">,</span>
-		todoAdded <span class="token operator">=</span> <span class="token punctuation">{</span>
-			reducer <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span>
-				state<span class="token punctuation">[</span>action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> done <span class="token operator">=</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>done <span class="token punctuation">}</span>
-			<span class="token keyword">end</span><span class="token punctuation">,</span>
-			<span class="token comment">-- customize the generated action creator</span>
-			prepare <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> done<span class="token punctuation">)</span>
-				<span class="token keyword">return</span> <span class="token punctuation">{</span>
-					payload <span class="token operator">=</span> <span class="token punctuation">{</span>
-						name <span class="token operator">=</span> name<span class="token punctuation">,</span>
-						done <span class="token operator">=</span> done<span class="token punctuation">,</span>
-					<span class="token punctuation">}</span>
-				<span class="token punctuation">}</span>
-			<span class="token keyword">end</span><span class="token punctuation">,</span>
-		<span class="token punctuation">}</span><span class="token punctuation">,</span>
-	<span class="token punctuation">}</span><span class="token punctuation">,</span>
-	<span class="token comment">-- add additional cases that might be relevant to this slice, but have</span>
-	<span class="token comment">-- an action creator generated elsewhere (like in another slice)</span>
-	extraReducers <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>builder<span class="token punctuation">)</span>
-		builder<span class="token punctuation">:</span><span class="token function">addCase</span><span class="token punctuation">(</span><span class="token string">"taskCompleted"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span>
-			<span class="token keyword">local</span> todo <span class="token operator">=</span> state<span class="token punctuation">[</span>action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>name<span class="token punctuation">]</span>
+<h2>Examples</h2>
+<h4>Using the default structure</h4>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> todoAdded <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span><span class="token string">"todoAdded"</span><span class="token punctuation">)</span>
 
-			<span class="token keyword">if</span> todo <span class="token keyword">then</span>
-				todo<span class="token punctuation">.</span>done <span class="token operator">=</span> <span class="token keyword">true</span>
-			<span class="token keyword">end</span>
-		<span class="token keyword">end</span><span class="token punctuation">)</span>
-	<span class="token keyword">end</span><span class="token punctuation">,</span>
-<span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">todoAdded</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">-- { type = "todoAdded", payload = "Buy groceries" }</span>
 </code></pre>
-<p>Now, let's set up the store and use our slice.</p>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> todosSlice <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span>ReplicatedStorage<span class="token punctuation">.</span>Todos<span class="token punctuation">.</span>slice<span class="token punctuation">)</span>
-<span class="token keyword">local</span> tasksSlice <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span>ReplicatedStorage<span class="token punctuation">.</span>Tasks<span class="token punctuation">.</span>slice<span class="token punctuation">)</span>
+<h4>Using a custom structure</h4>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> playerJoined <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span><span class="token string">"playerJoined"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>userId<span class="token punctuation">)</span>
+	<span class="token keyword">return</span> <span class="token punctuation">{</span>
+		payload <span class="token operator">=</span> userId<span class="token punctuation">,</span>
+		isRoblox <span class="token operator">=</span> userId <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
 
-<span class="token keyword">local</span> todos <span class="token operator">=</span> todosSlice<span class="token punctuation">.</span>actions
-<span class="token keyword">local</span> tasks <span class="token operator">=</span> tasksSlice<span class="token punctuation">.</span>actions
-
-<span class="token keyword">local</span> reducer <span class="token operator">=</span> Rodux<span class="token punctuation">.</span><span class="token function">combineReducers</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-	todos <span class="token operator">=</span> todosSlice<span class="token punctuation">.</span>reducer<span class="token punctuation">,</span>
-	tasks <span class="token operator">=</span> tasksSlice<span class="token punctuation">.</span>reducer<span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-
-<span class="token keyword">local</span> store <span class="token operator">=</span> Store<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>reducer<span class="token punctuation">)</span>
-
-<span class="token comment">-- add a new todo, mark it as not done</span>
-store<span class="token punctuation">:</span><span class="token function">dispatch</span><span class="token punctuation">(</span>todos<span class="token punctuation">.</span><span class="token function">todoAdded</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-<span class="token comment">-- complete a task, and mark the todo as done</span>
-store<span class="token punctuation">:</span><span class="token function">dispatch</span><span class="token punctuation">(</span>tasks<span class="token punctuation">.</span><span class="token function">taskCompleted</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">)</span>
-
-<span class="token comment">-- remove the todo entirely</span>
-store<span class="token punctuation">:</span><span class="token function">dispatch</span><span class="token punctuation">(</span>todos<span class="token punctuation">.</span><span class="token function">todoRemoved</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">playerJoined</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">-- { type = "playerJoined", payload = 1, isRoblox = true }</span>
 </code></pre>
 </div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createReducer"><code style="text-decoration:none">createReducer</code><a href="#createReducer" class="hash-link" aria-label="Direct link to createReducer" title="Direct link to createReducer">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createReducer.luau#L93"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createReducer</code><code>(</code><div class="inset_uKQm"><div><code>initialState<!-- -->: </code><code class="blue_P4bS">any?</code><code>,</code></div><div><code>callbackOrHandlers<!-- -->: </code><code class="blue_P4bS">BuilderCallback</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Cases">Cases?</a></code><code>,</code></div><div><code>matchers<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Matchers">Matchers?</a></code><code>,</code><span class="inlineDescription_G7Er">-- <span>
 <p>not used with BuilderCallback</p>
@@ -209,28 +160,77 @@ store<span class="token punctuation">:</span><span class="token function">dispat
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token comment">-- we can't add a default case with the map notation</span>
 </code></pre>
-</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createAction"><code style="text-decoration:none">createAction</code><a href="#createAction" class="hash-link" aria-label="Direct link to createAction" title="Direct link to createAction">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createAction.luau#L43"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createAction</code><code>(</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">Type</code><code>,</code></div><div><code>prepareFn<!-- -->: </code><code class="blue_P4bS">PrepareFn?</code></div></div><code>) → </code><code class="blue_P4bS">ActionCreator</code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">Type</code><code class="op_lSLc">&gt;</code></div><div>
+</div><div class="divider_rE5g"></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="createSlice"><code style="text-decoration:none">createSlice</code><a href="#createSlice" class="hash-link" aria-label="Direct link to createSlice" title="Direct link to createSlice">​</a></h3><div class="repositoryDetailsContainer_BPdw"><a class="sourceButton_sEho" href="https://github.com/SolarHorizon/rodux-utils/blob/master/src/createSlice.luau#L157"><div class="sourceButtonText_Vh0m">&lt;/&gt;</div></a></div><div class="memberString_GwaU"><code>RoduxUtils<!-- -->.</code><code class="green_DgR4">createSlice</code><code>(</code><code>options<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#SliceOptions">SliceOptions</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">State</code><code class="op_lSLc">&gt;</code><code>) → </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#Slice">Slice</a></code><code class="op_lSLc">&lt;</code><code class="blue_P4bS">State</code><code class="op_lSLc">&gt;</code></div><h3>Types</h3><h3 class="anchor anchorWithStickyNavbar_LWe7" id="SliceOptions"><a href="#SliceOptions" class="hash-link" aria-label="Direct link to SliceOptions" title="Direct link to SliceOptions">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>SliceOptions<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">string</code></div><div><code>initialState<!-- -->: </code><code class="blue_P4bS">State?</code></div><div><code>reducers<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/RoduxUtils#ReducerMap">ReducerMap</a></code></div><div><code>extraReducers<!-- -->: </code><code class="purple_ieR2">(</code><code class="green_DgR4">(</code><code>builder<!-- -->: </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder">ReducerBuilder</a></code><code class="green_DgR4">)</code><code class="green_DgR4"> → </code><code class="green_DgR4">(</code><code class="green_DgR4">)</code><code class="op_lSLc"> | </code><code class="blue_P4bS"><a style="text-decoration:underline;color:inherit" href="/rodux-utils/api/ReducerBuilder#Cases">Cases</a></code><code class="purple_ieR2">)</code><code class="blue_P4bS">?</code></div></div><code>}</code></div><div></div><h3 class="anchor anchorWithStickyNavbar_LWe7" id="Slice"><a href="#Slice" class="hash-link" aria-label="Direct link to Slice" title="Direct link to Slice">​</a></h3><div class="memberString_GwaU"><code class="purple_ieR2">interface</code> <code>Slice<!-- --> <!-- -->{</code><div class="inset_uKQm"><div><code>name<!-- -->: </code><code class="blue_P4bS">string</code></div><div><code>reducer<!-- -->: </code><code class="blue_P4bS">Reducer</code></div><div><code>actions<!-- -->: </code><code class="purple_ieR2">{</code><span><code>[</code><code class="blue_P4bS">string</code><code>]</code></span><code>: </code><code class="blue_P4bS">ActionCreator</code><code class="purple_ieR2">}</code><code class="blue_P4bS">,</code></div><div><code>initialState<!-- -->: </code><code class="blue_P4bS">State?</code></div></div><code>}</code></div><div></div><div>
 <p>
-  Similar to Rodux's <code>makeActionCreator</code>, except any additional data is put
-  inside of a <code>payload</code> property by default. This can be overriden with a
-  custom prepareFn.
+  Automatically generates a reducer and action creators for you. Uses
+  <code>createAction</code> and <code>createReducer</code> internally, so you're able to customize
+  each generated action creator and use drafts in the reducers.
 </p>
-<h2>Examples</h2>
-<h4>Using the default structure</h4>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> todoAdded <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span><span class="token string">"todoAdded"</span><span class="token punctuation">)</span>
+<h3>Example</h3>
+<p>
+  Let's create a slice for a todo list. We'll make actions for adding &#x26;
+  removing todos from the list, but not for marking a todo as complete.
+  We'll assume our project already has an action for completing tasks, and
+  reuse it in our todo slice.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> todoSlice <span class="token operator">=</span> <span class="token function">createSlice</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	name <span class="token operator">=</span> <span class="token string">"todo"</span><span class="token punctuation">,</span> 
+	initialState <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	reducers <span class="token operator">=</span> <span class="token punctuation">{</span>
+		<span class="token comment">-- uses createReducer, so you can mutate state because it's a draft</span>
+		todoRemoved <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span>
+			state<span class="token punctuation">[</span>action<span class="token punctuation">.</span>payload<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">nil</span>
+		<span class="token keyword">end</span><span class="token punctuation">,</span>
+		todoAdded <span class="token operator">=</span> <span class="token punctuation">{</span>
+			reducer <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span>
+				state<span class="token punctuation">[</span>action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span> done <span class="token operator">=</span> action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>done <span class="token punctuation">}</span>
+			<span class="token keyword">end</span><span class="token punctuation">,</span>
+			<span class="token comment">-- customize the generated action creator</span>
+			prepare <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> done<span class="token punctuation">)</span>
+				<span class="token keyword">return</span> <span class="token punctuation">{</span>
+					payload <span class="token operator">=</span> <span class="token punctuation">{</span>
+						name <span class="token operator">=</span> name<span class="token punctuation">,</span>
+						done <span class="token operator">=</span> done<span class="token punctuation">,</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span>
+			<span class="token keyword">end</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token comment">-- add additional cases that might be relevant to this slice, but have</span>
+	<span class="token comment">-- an action creator generated elsewhere (like in another slice)</span>
+	extraReducers <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>builder<span class="token punctuation">)</span>
+		builder<span class="token punctuation">:</span><span class="token function">addCase</span><span class="token punctuation">(</span><span class="token string">"taskCompleted"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span>
+			<span class="token keyword">local</span> todo <span class="token operator">=</span> state<span class="token punctuation">[</span>action<span class="token punctuation">.</span>payload<span class="token punctuation">.</span>name<span class="token punctuation">]</span>
 
-
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">todoAdded</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">-- { type = "todoAdded", payload = "Buy groceries" }</span>
+			<span class="token keyword">if</span> todo <span class="token keyword">then</span>
+				todo<span class="token punctuation">.</span>done <span class="token operator">=</span> <span class="token keyword">true</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span><span class="token punctuation">)</span>
+	<span class="token keyword">end</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
 </code></pre>
-<h4>Using a custom structure</h4>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> playerJoined <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span><span class="token string">"playerJoined"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>userId<span class="token punctuation">)</span>
-	<span class="token keyword">return</span> <span class="token punctuation">{</span>
-		payload <span class="token operator">=</span> userId<span class="token punctuation">,</span>
-		isRoblox <span class="token operator">=</span> userId <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">,</span>
-	<span class="token punctuation">}</span>
-<span class="token keyword">end</span><span class="token punctuation">)</span>
+<p>Now, let's set up the store and use our slice.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> todosSlice <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span>ReplicatedStorage<span class="token punctuation">.</span>Todos<span class="token punctuation">.</span>slice<span class="token punctuation">)</span>
+<span class="token keyword">local</span> tasksSlice <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span>ReplicatedStorage<span class="token punctuation">.</span>Tasks<span class="token punctuation">.</span>slice<span class="token punctuation">)</span>
 
-<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">playerJoined</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">-- { type = "playerJoined", payload = 1, isRoblox = true }</span>
+<span class="token keyword">local</span> todos <span class="token operator">=</span> todosSlice<span class="token punctuation">.</span>actions
+<span class="token keyword">local</span> tasks <span class="token operator">=</span> tasksSlice<span class="token punctuation">.</span>actions
+
+<span class="token keyword">local</span> reducer <span class="token operator">=</span> Rodux<span class="token punctuation">.</span><span class="token function">combineReducers</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	todos <span class="token operator">=</span> todosSlice<span class="token punctuation">.</span>reducer<span class="token punctuation">,</span>
+	tasks <span class="token operator">=</span> tasksSlice<span class="token punctuation">.</span>reducer<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">local</span> store <span class="token operator">=</span> Store<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>reducer<span class="token punctuation">)</span>
+
+<span class="token comment">-- add a new todo, mark it as not done</span>
+store<span class="token punctuation">:</span><span class="token function">dispatch</span><span class="token punctuation">(</span>todos<span class="token punctuation">.</span><span class="token function">todoAdded</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">-- complete a task, and mark the todo as done</span>
+store<span class="token punctuation">:</span><span class="token function">dispatch</span><span class="token punctuation">(</span>tasks<span class="token punctuation">.</span><span class="token function">taskCompleted</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">)</span>
+
+<span class="token comment">-- remove the todo entirely</span>
+store<span class="token punctuation">:</span><span class="token function">dispatch</span><span class="token punctuation">(</span>todos<span class="token punctuation">.</span><span class="token function">todoRemoved</span><span class="token punctuation">(</span><span class="token string">"Buy groceries"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -316,25 +316,30 @@ store<span class="token punctuation">:</span><span class="token function">dispat
             }
         },
         {
-            &quot;name&quot;: &quot;createSlice&quot;,
-            &quot;desc&quot;: &quot;Automatically generates a reducer and action creators for you. Uses\n`createAction` and `createReducer` internally, so you&#x27;re able to customize\neach generated action creator and use drafts in the reducers.\n\n### Example\n\nLet&#x27;s create a slice for a todo list. We&#x27;ll make actions for adding &amp;\nremoving todos from the list, but not for marking a todo as complete.\nWe&#x27;ll assume our project already has an action for completing tasks, and\nreuse it in our todo slice.\n\n```lua\nlocal todoSlice = createSlice({\n\tname = \&quot;todo\&quot;, \n\tinitialState = {},\n\treducers = {\n\t\t-- uses createReducer, so you can mutate state because it&#x27;s a draft\n\t\ttodoRemoved = function(state, action)\n\t\t\tstate[action.payload] = nil\n\t\tend,\n\t\ttodoAdded = {\n\t\t\treducer = function(state, action)\n\t\t\t\tstate[action.payload.name] = { done = action.payload.done }\n\t\t\tend,\n\t\t\t-- customize the generated action creator\n\t\t\tprepare = function(name, done)\n\t\t\t\treturn {\n\t\t\t\t\tpayload = {\n\t\t\t\t\t\tname = name,\n\t\t\t\t\t\tdone = done,\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\tend,\n\t\t},\n\t},\n\t-- add additional cases that might be relevant to this slice, but have\n\t-- an action creator generated elsewhere (like in another slice)\n\textraReducers = function(builder)\n\t\tbuilder:addCase(\&quot;taskCompleted\&quot;, function(state, action)\n\t\t\tlocal todo = state[action.payload.name]\n\n\t\t\tif todo then\n\t\t\t\ttodo.done = true\n\t\t\tend\n\t\tend)\n\tend,\n)\n```\n\nNow, let&#x27;s set up the store and use our slice.\n\n```lua\nlocal todosSlice = require(ReplicatedStorage.Todos.slice)\nlocal tasksSlice = require(ReplicatedStorage.Tasks.slice)\n\nlocal todos = todosSlice.actions\nlocal tasks = tasksSlice.actions\n\nlocal reducer = Rodux.combineReducers({\n\ttodos = todosSlice.reducer,\n\ttasks = tasksSlice.reducer,\n})\n\nlocal store = Store.new(reducer)\n\n-- add a new todo, mark it as not done\nstore:dispatch(todos.todoAdded(\&quot;Buy groceries\&quot;, false))\n\n-- complete a task, and mark the todo as done\nstore:dispatch(tasks.taskCompleted(\&quot;Buy groceries\&quot;)\n\n-- remove the todo entirely\nstore:dispatch(todos.todoRemoved(\&quot;Buy groceries\&quot;))\n```&quot;,
+            &quot;name&quot;: &quot;createAction&quot;,
+            &quot;desc&quot;: &quot;Similar to Rodux&#x27;s `makeActionCreator`, except any additional data is put\ninside of a `payload` property by default. This can be overriden with a\ncustom prepareFn.\n\n## Examples\n\n#### Using the default structure\n\n```lua\nlocal todoAdded = createAction(\&quot;todoAdded\&quot;)\n\n\nprint(todoAdded(\&quot;Buy groceries\&quot;)) -- { type = \&quot;todoAdded\&quot;, payload = \&quot;Buy groceries\&quot; }\n```\n\n#### Using a custom structure\n\n```lua\nlocal playerJoined = createAction(\&quot;playerJoined\&quot;, function(userId)\n\treturn {\n\t\tpayload = userId,\n\t\tisRoblox = userId == 1,\n\t}\nend)\n\nprint(playerJoined(1)) -- { type = \&quot;playerJoined\&quot;, payload = 1, isRoblox = true }\n```&quot;,
             &quot;params&quot;: [
                 {
-                    &quot;name&quot;: &quot;options&quot;,
+                    &quot;name&quot;: &quot;name&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;SliceOptions&lt;State&gt;&quot;
+                    &quot;lua_type&quot;: &quot;Type&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;prepareFn&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;PrepareFn?\n&quot;
                 }
             ],
             &quot;returns&quot;: [
                 {
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Slice&lt;State&gt;\n&quot;
+                    &quot;lua_type&quot;: &quot;ActionCreator&lt;Type&gt;\n&quot;
                 }
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 157,
-                &quot;path&quot;: &quot;src/createSlice.luau&quot;
+                &quot;line&quot;: 43,
+                &quot;path&quot;: &quot;src/createAction.luau&quot;
             }
         },
         {
@@ -375,30 +380,25 @@ store<span class="token punctuation">:</span><span class="token function">dispat
             }
         },
         {
-            &quot;name&quot;: &quot;createAction&quot;,
-            &quot;desc&quot;: &quot;Similar to Rodux&#x27;s `makeActionCreator`, except any additional data is put\ninside of a `payload` property by default. This can be overriden with a\ncustom prepareFn.\n\n## Examples\n\n#### Using the default structure\n\n```lua\nlocal todoAdded = createAction(\&quot;todoAdded\&quot;)\n\n\nprint(todoAdded(\&quot;Buy groceries\&quot;)) -- { type = \&quot;todoAdded\&quot;, payload = \&quot;Buy groceries\&quot; }\n```\n\n#### Using a custom structure\n\n```lua\nlocal playerJoined = createAction(\&quot;playerJoined\&quot;, function(userId)\n\treturn {\n\t\tpayload = userId,\n\t\tisRoblox = userId == 1,\n\t}\nend)\n\nprint(playerJoined(1)) -- { type = \&quot;playerJoined\&quot;, payload = 1, isRoblox = true }\n```&quot;,
+            &quot;name&quot;: &quot;createSlice&quot;,
+            &quot;desc&quot;: &quot;Automatically generates a reducer and action creators for you. Uses\n`createAction` and `createReducer` internally, so you&#x27;re able to customize\neach generated action creator and use drafts in the reducers.\n\n### Example\n\nLet&#x27;s create a slice for a todo list. We&#x27;ll make actions for adding &amp;\nremoving todos from the list, but not for marking a todo as complete.\nWe&#x27;ll assume our project already has an action for completing tasks, and\nreuse it in our todo slice.\n\n```lua\nlocal todoSlice = createSlice({\n\tname = \&quot;todo\&quot;, \n\tinitialState = {},\n\treducers = {\n\t\t-- uses createReducer, so you can mutate state because it&#x27;s a draft\n\t\ttodoRemoved = function(state, action)\n\t\t\tstate[action.payload] = nil\n\t\tend,\n\t\ttodoAdded = {\n\t\t\treducer = function(state, action)\n\t\t\t\tstate[action.payload.name] = { done = action.payload.done }\n\t\t\tend,\n\t\t\t-- customize the generated action creator\n\t\t\tprepare = function(name, done)\n\t\t\t\treturn {\n\t\t\t\t\tpayload = {\n\t\t\t\t\t\tname = name,\n\t\t\t\t\t\tdone = done,\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\tend,\n\t\t},\n\t},\n\t-- add additional cases that might be relevant to this slice, but have\n\t-- an action creator generated elsewhere (like in another slice)\n\textraReducers = function(builder)\n\t\tbuilder:addCase(\&quot;taskCompleted\&quot;, function(state, action)\n\t\t\tlocal todo = state[action.payload.name]\n\n\t\t\tif todo then\n\t\t\t\ttodo.done = true\n\t\t\tend\n\t\tend)\n\tend,\n)\n```\n\nNow, let&#x27;s set up the store and use our slice.\n\n```lua\nlocal todosSlice = require(ReplicatedStorage.Todos.slice)\nlocal tasksSlice = require(ReplicatedStorage.Tasks.slice)\n\nlocal todos = todosSlice.actions\nlocal tasks = tasksSlice.actions\n\nlocal reducer = Rodux.combineReducers({\n\ttodos = todosSlice.reducer,\n\ttasks = tasksSlice.reducer,\n})\n\nlocal store = Store.new(reducer)\n\n-- add a new todo, mark it as not done\nstore:dispatch(todos.todoAdded(\&quot;Buy groceries\&quot;, false))\n\n-- complete a task, and mark the todo as done\nstore:dispatch(tasks.taskCompleted(\&quot;Buy groceries\&quot;)\n\n-- remove the todo entirely\nstore:dispatch(todos.todoRemoved(\&quot;Buy groceries\&quot;))\n```&quot;,
             &quot;params&quot;: [
                 {
-                    &quot;name&quot;: &quot;name&quot;,
+                    &quot;name&quot;: &quot;options&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Type&quot;
-                },
-                {
-                    &quot;name&quot;: &quot;prepareFn&quot;,
-                    &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;PrepareFn?\n&quot;
+                    &quot;lua_type&quot;: &quot;SliceOptions&lt;State&gt;&quot;
                 }
             ],
             &quot;returns&quot;: [
                 {
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;ActionCreator&lt;Type&gt;\n&quot;
+                    &quot;lua_type&quot;: &quot;Slice&lt;State&gt;\n&quot;
                 }
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 43,
-                &quot;path&quot;: &quot;src/createAction.luau&quot;
+                &quot;line&quot;: 157,
+                &quot;path&quot;: &quot;src/createSlice.luau&quot;
             }
         }
     ],
@@ -543,8 +543,8 @@ store<span class="token punctuation">:</span><span class="token function">dispat
         &quot;line&quot;: 6,
         &quot;path&quot;: &quot;src/init.luau&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#EqualityFn" class="table-of-contents__link toc-highlight">EqualityFn</a></li><li><a href="#MemoizeFn" class="table-of-contents__link toc-highlight">MemoizeFn</a></li><li><a href="#MemoizeOptions" class="table-of-contents__link toc-highlight">MemoizeOptions</a></li><li><a href="#ReducerAndPrepareFn" class="table-of-contents__link toc-highlight">ReducerAndPrepareFn</a></li><li><a href="#ReducerMap" class="table-of-contents__link toc-highlight">ReducerMap</a></li><li><a href="#Slice" class="table-of-contents__link toc-highlight">Slice</a></li><li><a href="#SliceOptions" class="table-of-contents__link toc-highlight">SliceOptions</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#createAction" class="table-of-contents__link toc-highlight">.createAction</a></li><li><a href="#createReducer" class="table-of-contents__link toc-highlight">.createReducer</a></li><li><a href="#createSelector" class="table-of-contents__link toc-highlight">.createSelector</a></li><li><a href="#createSelectorCreator" class="table-of-contents__link toc-highlight">.createSelectorCreator</a></li><li><a href="#createSlice" class="table-of-contents__link toc-highlight">.createSlice</a></li><li><a href="#defaultMemoize" class="table-of-contents__link toc-highlight">.defaultMemoize</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2023 SolarHorizon. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/rodux-utils/assets/js/runtime~main.0b52f5af.js"></script>
-<script src="/rodux-utils/assets/js/main.87544e8d.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#EqualityFn" class="table-of-contents__link toc-highlight">EqualityFn</a></li><li><a href="#MemoizeFn" class="table-of-contents__link toc-highlight">MemoizeFn</a></li><li><a href="#MemoizeOptions" class="table-of-contents__link toc-highlight">MemoizeOptions</a></li><li><a href="#ReducerAndPrepareFn" class="table-of-contents__link toc-highlight">ReducerAndPrepareFn</a></li><li><a href="#ReducerMap" class="table-of-contents__link toc-highlight">ReducerMap</a></li><li><a href="#Slice" class="table-of-contents__link toc-highlight">Slice</a></li><li><a href="#SliceOptions" class="table-of-contents__link toc-highlight">SliceOptions</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#createAction" class="table-of-contents__link toc-highlight">.createAction</a></li><li><a href="#createReducer" class="table-of-contents__link toc-highlight">.createReducer</a></li><li><a href="#createSelector" class="table-of-contents__link toc-highlight">.createSelector</a></li><li><a href="#createSelectorCreator" class="table-of-contents__link toc-highlight">.createSelectorCreator</a></li><li><a href="#createSlice" class="table-of-contents__link toc-highlight">.createSlice</a></li><li><a href="#defaultMemoize" class="table-of-contents__link toc-highlight">.defaultMemoize</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 SolarHorizon. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/rodux-utils/assets/js/runtime~main.65494711.js"></script>
+<script src="/rodux-utils/assets/js/main.d8f8cb5d.js"></script>
 </body>
 </html>
