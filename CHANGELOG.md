@@ -1,3 +1,7 @@
+## 0.4.0
+
+- Use slice name as action type prefix
+
 ## 0.3.3
 
 - Fix payload function type in `createAction`

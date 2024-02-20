@@ -54,22 +54,22 @@ export type Slice<State> = {
 	initialState: State?,
 }
 
-local function makeActionsAndReducerMap(map: ReducerMap)
+local function makeActionsAndReducerMap(map: ReducerMap, sliceName: string)
 	local actions = {}
 	local reducers = {}
 
 	for type, reducer in map do
 		if typeof(reducer) == "function" then
-			actions[type] = createAction(type)
-			reducers[type] = reducer
+			actions[type] = createAction(sliceName .. "/" .. type)
+			reducers[actions[type].name] = reducer
 		else
 			assert(
 				typeof(reducer) == "table",
 				"reducers passed to createSlice must either be a function or a table with a reducer & a prepare function"
 			)
 
-			actions[type] = createAction(type, reducer.prepare)
-			reducers[type] = reducer.reducer
+			actions[type] = createAction(sliceName .. "/" .. type, reducer.prepare)
+			reducers[actions[type].name] = reducer.reducer
 		end
 	end
 
@@ -155,7 +155,7 @@ end
 	```
 ]=]
 local function createSlice<State>(options: SliceOptions<State>): Slice<State>
-	local actions, reducerMap = makeActionsAndReducerMap(options.reducers)
+	local actions, reducerMap = makeActionsAndReducerMap(options.reducers, options.name)
 
 	if typeof(options.extraReducers) == "table" then
 		for type, handler in reducerMap do

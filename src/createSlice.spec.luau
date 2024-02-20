@@ -42,7 +42,7 @@ return function()
 
 				local action = creator(true)
 				expect(action).to.be.a("table")
-				expect(action.type).to.equal(type)
+				expect(action.type).to.equal(slice.name .. "/" .. type)
 				expect(action.payload).to.equal(true)
 			end
 		end)
